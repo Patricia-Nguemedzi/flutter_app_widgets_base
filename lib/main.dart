@@ -12,9 +12,12 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(body: Center(
         child: Column( 
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text('Hello World!'),
            Text('Welcome to my app.'),
+           
            Container(
               margin: EdgeInsets.all(20),
               padding: EdgeInsets.all(16),
