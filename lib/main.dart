@@ -32,9 +32,12 @@ class MainApp extends StatelessWidget {
                     'Ceci est un exemple de boîte stylisée',
                     style: TextStyle(color: Colors.white70, fontSize: 14),
                   ),
+                ],
+              ),
+            ),
 
 
-           Stack(
+            Stack(
              alignment: Alignment.topRight,
              children: [
                 Container(width: 200, height: 200, color: Colors.blue[100]),
@@ -44,11 +47,23 @@ class MainApp extends StatelessWidget {
                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 
                  ),
-               ]
-              ),              
+              ],
+            ),
+
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Icon(Icons.home, color: Colors.blue, size: 40),
+              Icon(Icons.star, color: Colors.amber, size: 40),
+              Icon(Icons.settings, color: Colors.grey, size: 40),
+              Icon(Icons.favorite, color: Colors.red, size: 40),
+           ],
+              ),
             ],
           ),
         ),
-      ]
-  ))));
-  }}
+      ),
+    );
+  }
+}
