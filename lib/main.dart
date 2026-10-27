@@ -21,22 +21,20 @@ class MainApp extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.purpleAccent,
                 borderRadius: BorderRadius.circular(25),
-          ),
-
-          child: Text(
-            'Boite stylisée avec container',
-            style: TextStyle(color: Colors.white, fontSize: 18),
-          ),
-          SizedBox(height: 8),
-          Text(
-            'Ceci est un exemple de texte à l\'intérieur d\'une boîte stylisée.',
-            style: TextStyle(color: Colors.white70, fontSize: 14),
-          ),
-        ),
-        ],
-        ),
-      ),
-    ),
-    );
-  }
-}
+              ),
+              child: Column(
+                children: [
+                  Text(
+                    'Boîte stylisée avec container',
+                    style: TextStyle(color: Colors.white, fontSize: 18),
+                  ),
+                  Text(
+                    'Ceci est un exemple de boîte stylisée',
+                    style: TextStyle(color: Colors.white70, fontSize: 14),
+                  ),
+                ],
+              ),
+            ),
+          ]
+        ))));
+  }}
