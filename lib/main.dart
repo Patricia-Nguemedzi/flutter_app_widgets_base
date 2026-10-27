@@ -19,8 +19,8 @@ class MainApp extends StatelessWidget {
            Text('Welcome to my app.'),
            
            Container(
-              margin: EdgeInsets.all(20),
-              padding: EdgeInsets.all(16),
+              margin: EdgeInsets.all(10),
+              padding: EdgeInsets.all(20),
               decoration: BoxDecoration(
                 color: Colors.purpleAccent,
                 borderRadius: BorderRadius.circular(25),
@@ -41,7 +41,7 @@ class MainApp extends StatelessWidget {
 
 
             Stack(
-             alignment: Alignment.topRight,
+             alignment: Alignment.bottomLeft,
              children: [
                 Container(width: 200, height: 200, color: Colors.blue[100]),
                 Icon(Icons.star, size: 100, color: Colors.amber),
